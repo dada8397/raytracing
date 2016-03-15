@@ -6,7 +6,7 @@ CC ?= gcc
 CFLAGS = \
 	-fopenmp -std=gnu99 -Wall -O0 -g
 LDFLAGS = \
-	-lm -lomp
+	-lm -lgomp
 
 ifeq ($(strip $(PROFILE)),1)
 PROF_FLAGS = -pg
